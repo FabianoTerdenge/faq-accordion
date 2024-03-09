@@ -1,6 +1,5 @@
 function openAnswere(id){
     let answere = document.getElementsByTagName("p");
-    console.log(answere);
     if(id > answere.length || id < 0)return;
     //toggle hide
     answere[id].classList.toggle("hide");
@@ -8,7 +7,4 @@ function openAnswere(id){
     let answereshown = !answere[id].classList.contains("hide");
     let question = document.getElementsByTagName("img");
     question[id+1].src = answereshown ? "assets/images/icon-minus.svg" : "assets/images/icon-plus.svg";
-    console.log(question[id+1].src);
-
-
 }

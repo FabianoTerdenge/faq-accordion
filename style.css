@@ -3,6 +3,7 @@
     --custom-Light-pink: hsl(275, 100%, 97%);
     --custom-Grayish-purple: hsl(292, 16%, 49%);
     --custom-Dark-purple: hsl(292, 42%, 14%);
+    --custom-Pink: hsl(280.92deg 82.98% 53.92%);
 }
 @font-face {
     font-family: worksansitalic;
@@ -60,6 +61,9 @@ h2{
     font-family: worksansvar;
     font-weight: 600;
 }
+.item:hover h2{
+    color:var(--custom-Pink);
+}
 
 .item {
     display: flex;
@@ -68,8 +72,4 @@ h2{
     justify-content: space-between;
     cursor: pointer;
     border-top: 1px solid var(--custom-Light-pink);
-}
-
-.item:hover{
-    color: var(--custom-Dark-purple);
 }
