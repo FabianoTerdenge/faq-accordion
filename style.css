@@ -1,0 +1,75 @@
+* {
+    --custom-White: hsl(0, 0%, 100%);
+    --custom-Light-pink: hsl(275, 100%, 97%);
+    --custom-Grayish-purple: hsl(292, 16%, 49%);
+    --custom-Dark-purple: hsl(292, 42%, 14%);
+}
+@font-face {
+    font-family: worksansitalic;
+    src: url(assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: worksansvar;
+    src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+body {
+    min-height: 100vh;
+    margin: 0px;
+    background: url(assets/images/background-pattern-desktop.svg) no-repeat top center fixed;
+    background-color: var(--custom-Light-pink);
+    display: flex;
+    justify-content: center;
+}
+.headline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px 0;
+}
+main {
+    background-color: var(--custom-White);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-radius: 20px;
+    padding: 30px;
+    height: fit-content;
+    margin: auto;
+}
+.desktop {
+    background: url(assets/images/background-pattern-mobile.svg);
+}
+p {
+    font-size: 16px;
+    color: var(--custom-Grayish-purple);
+    font-family: worksansvar;
+    font-weight: 400;
+}
+.hide {
+    display: none;
+}
+h1 {
+    padding-left: 2rem;
+    font-family: worksansvar;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 12px 0;
+}
+h2{
+    padding-right:8px;
+    font-family: worksansvar;
+    font-weight: 600;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-top: 1px solid var(--custom-Light-pink);
+}
+
+.item:hover{
+    color: var(--custom-Dark-purple);
+}
