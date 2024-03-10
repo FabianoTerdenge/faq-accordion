@@ -31,7 +31,7 @@ main {
     background-color: var(--custom-White);
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     border-radius: 20px;
     padding: 30px;
     height: fit-content;
@@ -45,9 +45,15 @@ p {
     color: var(--custom-Grayish-purple);
     font-family: worksansvar;
     font-weight: 400;
+    animation: all 3s ease-in-out; 
+    
 }
-.hide {
+.hide { 
+    
     display: none;
+}
+h1,h2{
+    overflow: hidden;
 }
 h1 {
     padding-left: 2rem;
@@ -56,13 +62,14 @@ h1 {
     font-size: 3rem;
     margin: 12px 0;
 }
-h2{
-    padding-right:8px;
+h2 {
+    padding-right: 8px;
     font-family: worksansvar;
     font-weight: 600;
+    font-size: 18px;
 }
-.item:hover h2{
-    color:var(--custom-Pink);
+.item:hover h2 {
+    color: var(--custom-Pink);
 }
 
 .item {
@@ -72,4 +79,11 @@ h2{
     justify-content: space-between;
     cursor: pointer;
     border-top: 1px solid var(--custom-Light-pink);
+}
+@media (max-width:500px) {
+    main{
+        box-sizing: border-box;
+        width: 90%;
+    }
+    
 }
